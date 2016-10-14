@@ -35,11 +35,17 @@ var YourComponent = React.createClass({
   },
 
   _renderRow() {
-    var header = (
+    var headerOpen = (
       <View style={...}>
         <Text>Click to Expand</Text>
       </View>
     );
+
+    var headerClosed = (
+      <View style={...}>
+        <Text>Click to Close</Text>
+      </View>
+    )
 
     var content = (
       <View style={...}>
@@ -49,7 +55,8 @@ var YourComponent = React.createClass({
 
     return (
       <Accordion
-        header={header}
+        headerOpened={headerOpen}
+        headerClosed={headerClosed}
         content={content}
         easing="easeOutCubic"
       />
