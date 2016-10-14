@@ -19,7 +19,8 @@ var Accordion = React.createClass({
     content: React.PropTypes.element.isRequired,
     easing: React.PropTypes.string,
     expanded: React.PropTypes.bool,
-    header: React.PropTypes.element.isRequired,
+    headerOpened: React.PropTypes.element.isRequired,
+    headerClosed: React.PropTypes.element.isRequired,
     onPress: React.PropTypes.func,
     underlayColor: React.PropTypes.string,
     style: React.PropTypes.object
